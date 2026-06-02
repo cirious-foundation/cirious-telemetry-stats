@@ -1,0 +1,6 @@
+services:
+  cirioustelemetrystats:
+    image: cirioustelemetrystats
+    build:
+      context: .
+      dockerfile: ./Dockerfile
