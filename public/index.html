@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Readme Stats - Status</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #1a202c;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #718096;
+            margin-bottom: 30px;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #48bb78;
+            color: white;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        .info-section {
+            text-align: left;
+            margin: 30px 0;
+            padding: 20px;
+            background: #f7fafc;
+            border-radius: 8px;
+        }
+        
+        .info-section h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #2d3748;
+        }
+        
+        .info-section ul {
+            list-style: none;
+        }
+        
+        .info-section li {
+            padding: 8px 0;
+            color: #4a5568;
+            font-size: 14px;
+        }
+        
+        .info-section li::before {
+            content: "→ ";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 10px 5px;
+            transition: background 0.3s;
+        }
+        
+        .button:hover {
+            background: #5568d3;
+        }
+        
+        .button.secondary {
+            background: #4a5568;
+        }
+        
+        .button.secondary:hover {
+            background: #2d3748;
+        }
+        
+        footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 14px;
+            color: #718096;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="45" fill="#667eea"/>
+            <path d="M30 50 L45 65 L70 35" stroke="white" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        
+        <h1>GitHub Readme Stats</h1>
+        <p class="subtitle">Get dynamically generated GitHub stats on your READMEs!</p>
+        
+        <div class="status-badge">
+            ✓ Service Online
+        </div>
+        
+        <div class="info-section">
+            <h2>Available API Endpoints</h2>
+            <ul>
+                <li><code>/api</code> - GitHub Stats Card</li>
+                <li><code>/api/pin</code> - Repository Card</li>
+                <li><code>/api/top-langs</code> - Top Languages Card</li>
+                <li><code>/api/wakatime</code> - WakaTime Stats Card</li>
+                <li><code>/api/gist</code> - Gist Card</li>
+            </ul>
+        </div>
+        
+        <div>
+            <a href="https://github.com/anuraghazra/github-readme-stats" class="button">View Documentation</a>
+            <a href="https://github.com/anuraghazra/github-readme-stats#demo" class="button secondary">See Examples</a>
+        </div>
+        
+        <footer>
+            <p>
+                Made with ❤️ by <a href="https://github.com/anuraghazra">Anurag Hazra</a>
+                <br>
+                <a href="https://vercel.com?utm_source=github_readme_stats_team&utm_campaign=oss">Powered by Vercel</a>
+            </p>
+        </footer>
+    </div>
+    
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
