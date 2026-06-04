@@ -7,7 +7,7 @@
   },
   "redirects": [
     {
-      "source": "/",
+      "source": "/github",
       "destination": "https://github.com/anuraghazra/github-readme-stats"
     }
   ]
